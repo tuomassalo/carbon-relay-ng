@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine
+FROM hypriot/rpi-alpine-scratch
 
 ADD carbon-relay-ng /bin/
 
