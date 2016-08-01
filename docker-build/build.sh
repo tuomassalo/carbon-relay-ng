@@ -4,8 +4,8 @@ export VERSION=master
 export GOPATH=/
 
 echo "Building carbon-relay-ng revision $revision"
-docker pull gliderlabs/alpine
-docker run --rm -v $(pwd):/export gliderlabs/alpine /bin/sh -c "\
+docker pull hypriot/rpi-alpine-scratch
+docker run --rm -v $(pwd):/export hypriot/rpi-alpine-scratch /bin/sh -c "\
   apk --update add git go make && \
   export GOPATH=$GOPATH && \
   export PATH="$PATH:$GOPATH/bin" && \
